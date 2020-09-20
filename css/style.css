@@ -1,0 +1,244 @@
+.grid{
+    display: grid;
+    grid-auto-flow: row;
+    justify-items: flex-end;
+    grid-gap: 5px;
+}
+
+.title-area{
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.card-title{
+    font-size: 3vw;
+}
+
+.field{
+    min-height: 50vh;
+    padding: 10px;
+}
+
+.field a{
+    text-decoration: none;
+}
+
+.field:hover{
+    transition: 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+    box-shadow: 0px 2px 8px 5px rgba(-1, 10, 15, 0.1);
+}
+
+.img{
+    width: 100%;
+    min-height: 70%;
+}
+
+.badge{
+    display: flex;
+    float: right;
+    position: relative;
+    justify-content: flex-start;
+    bottom: 240px;
+    /* top: 10px; */
+    border-radius: 0;
+}
+
+.text-muted{
+    font-size: 1.2vw;
+}
+
+.item{
+    margin: 5px;
+}
+
+.venue{
+    margin-bottom: 5px;
+}
+
+.carousel-indicators{
+    position: relative;
+}
+
+.carousel-indicators li{
+    background-color: black;
+    width: 20%;
+    margin: 0 10px;
+}
+
+.flex{
+    display: flex;
+    align-items: flex-end;
+}
+
+footer {
+    background-color: #191919;
+    color: white;
+    min-height: 50px;
+    display: grid;
+    align-content: flex-end;
+    grid-row: auto;
+    grid-gap: 50px;
+    padding: 10px 0px;
+}
+
+.footer{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 0.5fr;
+    margin-left: 20px;
+}
+
+.footer a:hover{
+    color: #41cdf0;
+}
+
+.pesan::before{
+    content: "";
+    animation: words 10s infinite;
+    transition: ease-in-out;
+    color: rgb(3, 49, 150);
+}
+
+.footer a{
+    margin-right: 10px;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+
+.footer h2{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.brand{
+    color: white;
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+.brand p{
+    color: grey;
+    font-size: 0.5em;
+    display: block;
+}
+
+.social-media{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.etc{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.copyright{
+    justify-self: center;
+    padding: 10px;
+}
+
+i.fab {
+    margin-right: 5px;
+}
+
+i.fas.fa-bars {
+    display: none;
+    color: white;
+}
+
+
+@keyframes words{
+    0%{ content: "hm...";}
+    25%{content: "ini susah belom bikin";}
+    50%{content: "kalo bisa bikinin";}
+    75%{content: "wkkwkw gua belom pro pake bootstrap";}
+    100%{content: "masih acak acakan tolong cek lagi :)";}
+}
+
+/* Responsive Untuk Small devices */
+
+@media (min-width: 768px ) and (max-width: 960px) {
+    .carousel-indicators{
+        display: none;
+    }
+
+    .title-area{
+        font-size: larger;
+        padding: 0;
+    }
+
+    .badge{
+        position: static;
+        display: none;
+    }
+
+    footer{
+        position: relative;
+        bottom: 0;
+    }
+  
+    .footer{
+        display: block;
+        font-size: 1em;
+    }
+  
+    .footer > *{
+        margin-bottom: 20px;
+    }
+
+    .nav-item{
+        margin-bottom: 10px;
+    }
+
+
+}
+
+
+
+/* Responsive Untuk extra-Small devices */
+
+@media (min-width: 300px ) and (max-width: 768px) {
+    .carousel-indicators{
+        display: none;
+    }
+
+    .title-area{
+        font-size: larger;
+        padding: 0;
+    }
+
+    .badge{
+        position: static;
+    }
+
+    footer{
+        position: relative;
+        bottom: 0;
+    }
+  
+    .footer{
+        display: block;
+        font-size: 1em;
+    }
+  
+    .footer > *{
+        margin-bottom: 20px;
+    }
+
+   .form-inline{
+       justify-content: flex-end;
+   }
+
+   .nav{
+       flex-direction: column;
+   }
+
+   .nav-item{
+       margin-bottom: 10px;
+   }
+
+}
